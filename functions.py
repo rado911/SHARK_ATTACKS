@@ -13,13 +13,7 @@ def read_dataframe(file_path: str) -> pd.DataFrame:
 
 
 def format_columns(df: pd.DataFrame, rename_dict: dict = None) -> pd.DataFrame:
-    df = df.copy()
-    df.columns = (
-        df.columns
-        .str.strip()
-        .str.lower()
-        .str.replace(" ", "_")
-    )
+    df = df.copy()df.columns = (df.columns.str.strip().str.lower().str.replace(" ", "_"))
     if rename_dict:
         df = df.rename(columns=rename_dict)
     return df
@@ -35,11 +29,7 @@ def numeric_fill_nan(df: pd.DataFrame, column: str, method: str = "median") -> p
     df = df.copy()
 
     # Convert percent strings to numeric
-    df[column] = (
-        df[column]
-        .astype(str)
-        .str.replace("%", "", regex=False)
-    )
+    df[column] = (df[column].astype(str).str.replace("%", "", regex=False))
 
     df[column] = pd.to_numeric(df[column], errors="coerce")
 
