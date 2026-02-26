@@ -1,13 +1,13 @@
 The Fatality of Shark Attacks
-**1. Project Overview**
+**Project Overview**
 
 This project analyzes global shark attack data to examine whether provoked shark attacks are associated with higher fatality rates compared to unprovoked attacks. The study applies exploratory data analysis and statistical testing while controlling for country, year and activity
 
-**2. Research Question**
+**Research Question**
 
 Are provoked shark attacks more likely to result in fatal outcomes than unprovoked shark attacks?
 
-**3. Hypotheses**
+**Hypotheses**
 
 Null Hypothesis (H₀):
 There is no statistically significant difference in fatality rates between provoked and unprovoked shark attacks.
